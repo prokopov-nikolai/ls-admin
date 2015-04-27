@@ -80,16 +80,15 @@
 					{/block}
 
 					{* Системные сообщения *}
-					{if ! $bNoSystemMessages}
-						{if $aMsgError}
-							{include 'components/alert/alert.tpl' mAlerts=$aMsgError mods='error' bClose=true}
-						{/if}
-
-						{if $aMsgNotice}
-							{include 'components/alert/alert.tpl' mAlerts=$aMsgNotice mods='success' bClose=true}
-						{/if}
+					{if $aMsgError}
+						{component 'alert' text=$aMsgError mods='error' close=true}
 					{/if}
-					{block name='layout_content'}{/block}
+
+					{if $aMsgNotice}
+						{component 'alert' text=$aMsgNotice close=true}
+					{/if}
+
+						{block name='layout_content'}{/block}
 
 					{block name='layout_content_end'}{/block}
 				</section>

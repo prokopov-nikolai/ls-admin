@@ -3,5 +3,5 @@
 {block name="layout_head_end"}{/block}
 
 {block name='layout_content'}
-	Здравствуйте!
+	<p>Здравствуйте!</p>
 {/block}

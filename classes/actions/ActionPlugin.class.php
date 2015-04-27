@@ -61,23 +61,6 @@ class PluginAdmin_ActionPlugin extends ActionPlugin
 		 * Скрипты админки
 		 */
 		$this->Viewer_AppendScript(Plugin::GetTemplateWebPath(__CLASS__) . 'assets/js/init.js');
-		$this->Viewer_AppendScript(Plugin::GetTemplateWebPath(__CLASS__) . 'assets/redactor/redactor.js');
-
-		/**
-		 * Скрипты для формы добавления топика
-		 */
-//		$this->Viewer_AppendScript(Config::Get('path.application.web').'/frontend/common/js/media.js', array('name' => 'media'));
-//		$this->Viewer_AppendScript(Config::Get('path.application.web')."/frontend/common/js/settings.js", array('name' => 'settings'));
-//		$this->Viewer_AppendScript(Config::Get('path.framework.frontend.web')."/js/vendor/jquery.fileupload.js", array('name' => 'jquery.fileupload'));
-//		$this->Viewer_AppendScript(Config::Get('path.framework.frontend.web')."/js/vendor/fotorama/fotorama.js", array('name' => 'fotorama'));
-//		//	    $this->Viewer_AppendScript(Config::Get('path.application.web')."/frontend/common/js/topic.js", array('name' => 'topic'));
-		//	    $this->Viewer_AppendScript(Config::Get('path.application.web')."/frontend/common/js/blog.js", array('name' => 'blog'));
-		//	    $this->Viewer_AppendScript(Config::Get('path.application.web')."/frontend/common/js/content.js", array('name' => 'content'));
-		/**
-		 * Стили для редактора
-		 */
-//		$this->Viewer_AppendStyle(Config::Get('path.framework.frontend.web')."/js/vendor/markitup/skins/synio/style.css");
-//		$this->Viewer_AppendStyle(Config::Get('path.framework.frontend.web')."/js/vendor/markitup/sets/synio/style.css");
 	}
 
 	/**

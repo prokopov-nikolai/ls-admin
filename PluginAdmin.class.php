@@ -8,18 +8,6 @@ if (!class_exists('Plugin')) {
 
 class PluginAdmin extends Plugin
 {
-	/**
-	 * Наследование сущностей
-	 * @var array
-	 */
-	protected $aInherits=array(
-		'entity' => array(
-			'ModuleUser_EntityUser' => 'PluginAdmin_ModuleUser_EntityUser'
-		),
-		'module' => array(
-			'ModuleUser' => 'PluginAdmin_ModuleUser'
-		)
-	);
 
 	public function Activate()
 	{

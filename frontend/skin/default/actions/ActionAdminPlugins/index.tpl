@@ -6,14 +6,14 @@
 
 {block name='layout_content'}
 	<h2>{$aLang.plugin.admin.menu.plugins}</h2>
-	<form action="{router page='admin'}plugins/" method="post" id="form_plugins_list">
+	<form action="{router page='admin'}plugins/" method="post" class="table">
 		<table class="table table-plugins">
 			<thead>
 			<tr>
 				<th class="cell-checkbox"><input type="checkbox" name="" onclick="ls.tools.checkAll('form_plugins_checkbox', this, true);" /></th>
-				<th>{$aLang.admin.plugins.plugin_name}</th>
-				<th>{$aLang.admin.plugins.plugin_version}</th>
-				<th>{$aLang.admin.plugins.plugin_author}</th>
+				<th>Название плагина</th>
+				<th>Версия</th>
+				<th>Автор</th>
 				<th></th>
 			</tr>
 			</thead>
