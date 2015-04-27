@@ -1,0 +1,129 @@
+<script type="text/javascript">
+	$(function(){
+		{if !$oCategoryCurrent}
+			$('#submit-{$bAction}-category').bind('click', function(){
+				$('#form-{$bAction}-category .dn').slideToggle();
+				$('#submit-{$bAction}-category').unbind('click');
+				return false;
+			});
+		{/if}
+		/**
+		 * Переключение вкладок
+		 */
+		$('.nav.nav-tabs a').tab();
+	});
+</script>
+
+{* Подключение редактора *}
+{if $bRedactorInit === true}
+	{include 'forms/editor.init.tpl' sEditorSelector='text-add, .text-update' sMediaTargetType='category'}
+{/if}
+
+<div class="cl" style="height: 20px;"></div>
+<form action="" method="post" enctype="multipart/form-data" id="form-{$bAction}-category">
+	<div class="{if !$oCategoryCurrent}dn{/if}">
+		<ul class="nav nav-tabs">
+			<li class="active" data-tab-target="tab1-{$bAction}"><a href="#tab1-{$bAction}">Описание</a></li>
+			<li data-tab-target="tab2-{$bAction}"><a href="#tab2-{$bAction}">Seo</a></li>
+			<li data-tab-target="tab3-{$bAction}"><a href="#tab3-{$bAction}">Харк-ки</a></li>
+			<li data-tab-target="tab4-{$bAction}"><a href="#tab4-{$bAction}">Дополнительно</a></li>
+		</ul>
+		<div class="tab-pane" id="tab-pane-login" data-type="tab-panes">
+			<div class="tab-pane active" id="tab1-{$bAction}">
+				{* Родительская категория *}
+				{include file='forms/fields/form.field.select.tpl'
+				sFieldName        = 'category[pid]'
+				sFieldLabel       = 'Родительская категория'
+				aFieldItems       = $aCategorySelect
+				sFieldSelectedValue= {($oCategoryCurrent) ? $oCategoryCurrent->getPid() : $iCategoryId}}
+
+				{* Название категории *}
+				{include file='forms/fields/form.field.text.tpl'
+				sFieldName        = 'category[title]'
+				sFieldLabel       = 'Название категории'
+				sFieldValue       = {($oCategoryCurrent) ? $oCategoryCurrent->getTitle() : ''}}
+
+				{* Урл категории *}
+				{include file='forms/fields/form.field.text.tpl'
+				sFieldName        = 'category[url]'
+				sFieldLabel       = 'Урл категории'
+				bFieldIsDisabled  = true
+				sFieldValue       = {($oCategoryCurrent) ? $oCategoryCurrent->getUrlFull() : ''}}
+
+				{* Урл категории *}
+				{include file='forms/fields/form.field.hidden.tpl'
+				sFieldName        = 'category[url]'
+				sFieldValue       = {($oCategoryCurrent) ? $oCategoryCurrent->getUrl() : ''}}
+
+				{* Описание *}
+				{include file='forms/fields/form.field.textarea.tpl'
+				sFieldName        = 'category[text]'
+				sFieldLabel       = 'Описание'
+				sFieldClasses     = 'width-full cat-text text-'|cat:$bAction
+				sFieldValue       = {($oCategoryCurrent) ? $oCategoryCurrent->getText() : ''}}
+			</div>
+			<div class="tab-pane" id="tab2-{$bAction}">
+				{* title *}
+				{include file='forms/fields/form.field.textarea.tpl'
+				sFieldName        = 'category[seo_title]'
+				sFieldLabel       = 'Title'
+				sFieldValue       = {($oCategoryCurrent) ? $oCategoryCurrent->getSeoTitle() : ''}|escape:'html'}
+
+				{* keywords *}
+				{include file='forms/fields/form.field.textarea.tpl'
+				sFieldName        = 'category[seo_keywords]'
+				sFieldLabel       = 'Keywords'
+				sFieldValue       = {($oCategoryCurrent) ? $oCategoryCurrent->getSeoKeywords() : ''}|escape:'html'}
+
+				{* description *}
+				{include file='forms/fields/form.field.textarea.tpl'
+				sFieldName        = 'category[seo_description]'
+				sFieldLabel       = 'Description'
+				sFieldValue       = {($oCategoryCurrent) ? $oCategoryCurrent->getSeoDescription() : ''}|escape:'html'}
+			</div>
+			<div class="tab-pane" id="tab3-{$bAction}">
+
+			</div>
+			<div class="tab-pane" id="tab4-{$bAction}">
+				{* Наценка *}
+				{include file='forms/fields/form.field.text.tpl'
+				sFieldName        = 'category[margin]'
+				sFieldLabel       = 'Наценка'
+				sFieldValue       = {($oCategoryCurrent && $oCategoryCurrent->getMargin()) ? $oCategoryCurrent->getMargin() : '30.00'}}
+
+				{* Сортировка *}
+				{include file='forms/fields/form.field.text.tpl'
+				sFieldName        = 'category[sort]'
+				sFieldLabel       = 'Сортировка'
+				sFieldValue       = {($oCategoryCurrent && $oCategoryCurrent->getSort()) ? $oCategoryCurrent->getSort() : '0'}}
+
+				{* Ставка Яндекс Маркет *}
+				{include file='forms/fields/form.field.text.tpl'
+				sFieldName        = 'category[bid]'
+				sFieldLabel       = 'Ставка Яндекс Маркет'
+				sFieldValue       = {($oCategoryCurrent && $oCategoryCurrent->getBid()) ? $oCategoryCurrent->getBid() : '10'}}
+			</div>
+		</div>
+		<div class="cl" style="height: 20px;"></div>
+	</div>
+
+	{* Айди категории *}
+	{if $bAction === 'update'}
+		{include file='forms/fields/form.field.hidden.tpl'
+			sFieldName        = 'category[id]'
+			sFieldValue       = $oCategory->getId()}
+	{/if}
+
+
+	{include file='forms/fields/form.field.hidden.tpl'
+		sFieldName        = 'action'
+		sFieldValue       = $bAction}
+
+	{* Сохранить *}
+	{if $bAction === 'update'}{$sButtonText = 'Редактировать категорию'}{else if $bRoot === true}{$sButtonText = 'Добавить категорию'}{else}{$sButtonText = 'Добавить подкатегорию'}{/if}
+	{include file='forms/fields/form.field.button.tpl'
+		sFieldId        ='submit-'|cat:$bAction|cat:'-category'
+		sFieldClasses   ='btn btn-primary'
+		sFieldText      =$sButtonText}
+</form>
+<div class="cl" style="height: 20px;"></div>

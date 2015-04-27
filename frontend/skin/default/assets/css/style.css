@@ -1,0 +1,247 @@
+html, body {
+	height: 100%;
+	line-height:18px;
+	margin:0px;
+	padding:0px;
+}
+body {
+	background: #fff!important;
+	height: 100%;
+	min-height:100%;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.cl {
+	display: block;
+	clear: both;
+	width: 100%;
+}
+.dn {
+	display: none;
+}
+#wrapper {
+	height: auto !important;
+	min-height:100%;
+	height: 100%;
+	margin:0px auto;
+	overflow:hidden;
+	width:100%;
+}
+header {
+	height:100px;
+	overflow:hidden;
+	padding:20px 1% 20px 2%;
+	min-width:990px;
+}
+section {
+	padding-top: 60px   ;
+	z-index: 0;
+}
+.breadcrumb {
+	background: #fff;
+	padding: 20px 0;
+	position: fixed;
+	top: -3px;
+	width: 100%;
+	z-index: 100;
+}
+
+aside {
+	padding-top: 20px;
+	position: fixed;
+	top: 0;
+	z-index: 101;
+}
+#footer_guarantor {
+	clear:both;
+	display:block;
+	height:70px;
+}
+footer {
+	background-color:#e3e3e3;
+	color:#727272;
+	display:block;
+	font-size:15px;
+	height:57px;
+	margin:-57px auto;
+	overflow:hidden;
+	padding:20px 40px 20px;
+}
+#cache-del {
+	background: url(../img/cache-del.png) 5px 6px no-repeat #f7f7f7;
+	border:#e4e4e4 solid 1px;
+	border-radius:2px;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	color:#909090;
+	display:block;
+	margin-bottom:10px;
+	padding:5px 10px;
+	text-align:center;
+	text-decoration:none;
+	width:140px;
+}
+#cache-del:hover {
+	-moz-box-shadow: 0px 1px 2px #ededed;
+	-webkit-box-shadow: 0px 1px 2px #ededed;
+	box-shadow: 0px 1px 2px #ededed;
+}
+
+nav.main a {
+	border-left: 1px solid #fff;
+	color: #999;
+	display: block;
+	font-size: 13px;
+	margin: 1px 0;
+	padding: 2px 0 2px 10px;
+	text-decoration: none;
+}
+nav.main a:hover {
+	border-left: 1px solid #563d7c;
+}
+nav.main a.active {
+	border-left: 2px solid #563d7c;
+	color: #563d7c;
+	font-size: 14px;
+}
+nav.main nav.sub a.active {
+	border-left: 1px solid #563d7c;
+	font-size: 13px;
+}
+.admin-fabric-list {
+	padding-top: 20px;
+}
+.admin-fabric {
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	overflow: hidden;
+	position: relative;
+	width: 150px;
+}
+.delete {
+	color: #d60000;
+	font-size:30px;
+	position: absolute;
+	right: 10px;
+	top: 0;
+	text-decoration: none;
+}
+.delete:before {
+	display: block;
+	content: "×";
+}
+.admin-fabric .delete:before {
+	display: none;
+}
+.admin-fabric:hover .delete:before {
+	display: block;
+}
+.type-title:hover {
+	text-decoration: underline;
+}
+
+/*#tree .node {*/
+	/*padding: 5px 0 5px 5px;*/
+	/*position: relative;*/
+/*}*/
+/*#tree .node .node {*/
+	/*padding-left: 20px;*/
+/*}*/
+/*#tree .node .node:before {*/
+	/*content: '-';*/
+/*}*/
+.tree {
+	position:relative;
+	display: block;
+}
+.tree li li {
+	padding-left: 20px;
+}
+.tree li > div {
+	position:relative;
+	margin-left:-100000px;
+	padding: 5px 0 5px 100000px;
+	border: 1px solid transparent;
+	display:block;
+}
+.tree li div:hover, .media_items li:hover  {
+	background-color: #ffffd7;
+}
+.tree li li div:before { content: '-'; }
+.tree li li li div:before { content: '- -'; }
+.tree li li li li div:before { content: '- - -'; }
+.tree li li li li li div:before { content: '- - -'; }
+.tree li .delete {
+	top: 7px;
+}
+.media_items li {
+	overflow: hidden;
+	padding: 10px;
+	position: relative;
+}
+.form-field {
+	margin-bottom: 20px;
+}
+.product-list.order .product {
+	padding: 0 8px 0 15px;
+}
+.product-list.order .product .fabrics .col-sm-3 {
+	padding: 0;
+}
+.product-list.order .product .fabrics .fabric-item {
+	margin: 0;
+}
+.product-list.order .product .fabrics .col-sm-3 {
+	width: 30%!important;
+}
+.product-list.order .product .fabrics .col-sm-6 {
+	width: 33%!important;
+}
+.product-list.order .product .fabrics .dop {
+	padding: 0;
+}
+.product-list.order .product .za-divan {
+	font-size: 13px;
+	margin: 2px 0 10px 0;
+}
+.product-list.order .product .price-total .cost {
+	font-size: 20px;
+}
+.product-list.order .product .img {
+	height: 132px;
+}
+.table h3 {
+	margin-top: 5px;
+}
+.table tr:nth-child(2n){
+	background: none repeat scroll 0 0 #F3F3F3;
+}
+nav.main nav a {
+	font-size: 13px;
+	padding-left: 20px;
+}
+.list-items {
+	margin: 20px 0;
+}
+.item a {
+	display: block;
+	padding: 5px;
+}
+.item:hover {
+	background: #faebcc;
+}
+.item:hover a {
+	text-decoration: none!important;
+}
+.item .icon-ls-remove {
+	margin: -21px 5px 0 0;
+}
+.tab-pane {
+	display: none;
+}
+.tab-pane.active {
+	display: block;
+}

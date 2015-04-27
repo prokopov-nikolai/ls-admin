@@ -1,0 +1,165 @@
+/**
+ * Иконки
+ *
+ * Иконки Glyphicons
+ * http://glyphicons.com/
+ * 
+ * @license   GNU General Public License, version 2
+ * @copyright 2013 OOO "ЛС-СОФТ" {@link http://livestreetcms.com}
+ * @author    Denis Shakhov <denis.shakhov@gmail.com>
+ */
+
+[class^="icon-ls-"],
+[class*=" icon-ls-"]  { 
+	display: inline-block;
+	vertical-align: text-top;
+	width: 14px;
+	height: 14px;
+	line-height: 14px;
+	background: url(../img/icons-ls.png) no-repeat;
+	text-decoration: none!important;
+}
+
+.icon-ls-white { background-image: url(../img/icons-white.png); }
+
+.icon-ls-glass              { background-position: 0      0; }
+.icon-ls-music              { background-position: -24px  0; }
+.icon-ls-search             { background-position: -48px  0; }
+.icon-ls-envelope           { background-position: -72px  0; }
+.icon-ls-heart              { background-position: -96px  0; }
+.icon-ls-star               { background-position: -120px 0; }
+.icon-ls-star-empty         { background-position: -144px 0; }
+.icon-ls-user               { background-position: -168px 0; }
+.icon-ls-film               { background-position: -192px 0; }
+.icon-ls-th-large           { background-position: -216px 0; }
+.icon-ls-th                 { background-position: -240px 0; }
+.icon-ls-th-list            { background-position: -264px 0; }
+.icon-ls-ok                 { background-position: -288px 0; }
+.icon-ls-remove             { background-position: -312px 0;
+	cursor: pointer; }
+.icon-ls-zoom-in            { background-position: -336px 0; }
+.icon-ls-zoom-out           { background-position: -360px 0; }
+.icon-ls-off                { background-position: -384px 0; }
+.icon-ls-signal             { background-position: -408px 0; }
+.icon-ls-cog                { background-position: -432px 0; }
+.icon-ls-trash              { background-position: -456px 0; }
+
+.icon-ls-home               { background-position: 0      -24px; }
+.icon-ls-file               { background-position: -24px  -24px; }
+.icon-ls-time               { background-position: -48px  -24px; }
+.icon-ls-road               { background-position: -72px  -24px; }
+.icon-ls-download-alt       { background-position: -96px  -24px; }
+.icon-ls-download           { background-position: -120px -24px; }
+.icon-ls-upload             { background-position: -144px -24px; }
+.icon-ls-inbox              { background-position: -168px -24px; }
+.icon-ls-play-circle        { background-position: -192px -24px; }
+.icon-ls-repeat             { background-position: -216px -24px; }
+.icon-ls-refresh            { background-position: -240px -24px; }
+.icon-ls-list-alt           { background-position: -264px -24px; }
+.icon-ls-lock               { background-position: -287px -24px; }
+.icon-ls-flag               { background-position: -312px -24px; }
+.icon-ls-headphones         { background-position: -336px -24px; }
+.icon-ls-volume-off         { background-position: -360px -24px; }
+.icon-ls-volume-down        { background-position: -384px -24px; }
+.icon-ls-volume-up          { background-position: -408px -24px; }
+.icon-ls-qrcode             { background-position: -432px -24px; }
+.icon-ls-barcode            { background-position: -456px -24px; }
+
+.icon-ls-tag                { background-position: 0      -48px; }
+.icon-ls-tags               { background-position: -25px  -48px; }
+.icon-ls-book               { background-position: -48px  -48px; }
+.icon-ls-bookmark           { background-position: -72px  -48px; }
+.icon-ls-print              { background-position: -96px  -48px; }
+.icon-ls-camera             { background-position: -120px -48px; }
+.icon-ls-font               { background-position: -144px -48px; }
+.icon-ls-bold               { background-position: -167px -48px; }
+.icon-ls-italic             { background-position: -192px -48px; }
+.icon-ls-text-height        { background-position: -216px -48px; }
+.icon-ls-text-width         { background-position: -240px -48px; }
+.icon-ls-align-left         { background-position: -264px -48px; }
+.icon-ls-align-center       { background-position: -288px -48px; }
+.icon-ls-align-right        { background-position: -312px -48px; }
+.icon-ls-align-justify      { background-position: -336px -48px; }
+.icon-ls-list               { background-position: -360px -48px; }
+.icon-ls-indent-left        { background-position: -384px -48px; }
+.icon-ls-indent-right       { background-position: -408px -48px; }
+.icon-ls-facetime-video     { background-position: -432px -48px; }
+.icon-ls-picture            { background-position: -456px -48px; }
+
+.icon-ls-pencil             { background-position: 0      -72px; }
+.icon-ls-map-marker         { background-position: -24px  -72px; }
+.icon-ls-adjust             { background-position: -48px  -72px; }
+.icon-ls-tint               { background-position: -72px  -72px; }
+.icon-ls-edit               { background-position: -96px  -72px; }
+.icon-ls-share              { background-position: -120px -72px; }
+.icon-ls-check              { background-position: -144px -72px; }
+.icon-ls-move               { background-position: -168px -72px; }
+.icon-ls-step-backward      { background-position: -192px -72px; }
+.icon-ls-fast-backward      { background-position: -216px -72px; }
+.icon-ls-backward           { background-position: -240px -72px; }
+.icon-ls-play               { background-position: -264px -72px; }
+.icon-ls-pause              { background-position: -288px -72px; }
+.icon-ls-stop               { background-position: -312px -72px; }
+.icon-ls-forward            { background-position: -336px -72px; }
+.icon-ls-fast-forward       { background-position: -360px -72px; }
+.icon-ls-step-forward       { background-position: -384px -72px; }
+.icon-ls-eject              { background-position: -408px -72px; }
+.icon-ls-chevron-left       { background-position: -432px -72px; }
+.icon-ls-chevron-right      { background-position: -456px -72px; }
+
+.icon-ls-plus-sign          { background-position: 0      -96px; }
+.icon-ls-minus-sign         { background-position: -24px  -96px; }
+.icon-ls-remove-sign        { background-position: -48px  -96px; }
+.icon-ls-ok-sign            { background-position: -72px  -96px; }
+.icon-ls-question-sign      { background-position: -96px  -96px; }
+.icon-ls-info-sign          { background-position: -120px -96px; }
+.icon-ls-screenshot         { background-position: -144px -96px; }
+.icon-ls-remove-circle      { background-position: -168px -96px; }
+.icon-ls-ok-circle          { background-position: -192px -96px; }
+.icon-ls-ban-circle         { background-position: -216px -96px; }
+.icon-ls-arrow-left         { background-position: -240px -96px; }
+.icon-ls-arrow-right        { background-position: -264px -96px; }
+.icon-ls-arrow-up           { background-position: -289px -96px; }
+.icon-ls-arrow-down         { background-position: -312px -96px; }
+.icon-ls-share-alt          { background-position: -336px -96px; }
+.icon-ls-resize-full        { background-position: -360px -96px; }
+.icon-ls-resize-small       { background-position: -384px -96px; }
+.icon-ls-plus               { background-position: -408px -96px; }
+.icon-ls-minus              { background-position: -433px -96px; }
+.icon-ls-asterisk           { background-position: -456px -96px; }
+
+.icon-ls-exclamation-sign   { background-position: 0      -120px; }
+.icon-ls-gift               { background-position: -24px  -120px; }
+.icon-ls-leaf               { background-position: -48px  -120px; }
+.icon-ls-fire               { background-position: -72px  -120px; }
+.icon-ls-eye-open           { background-position: -96px  -120px; }
+.icon-ls-eye-close          { background-position: -120px -120px; }
+.icon-ls-warning-sign       { background-position: -144px -120px; }
+.icon-ls-plane              { background-position: -168px -120px; }
+.icon-ls-calendar           { background-position: -192px -120px; }
+.icon-ls-random             { background-position: -216px -120px; }
+.icon-ls-comment            { background-position: -240px -120px; }
+.icon-ls-magnet             { background-position: -264px -120px; }
+.icon-ls-chevron-up         { background-position: -288px -120px; }
+.icon-ls-chevron-down       { background-position: -313px -119px; }
+.icon-ls-retweet            { background-position: -336px -120px; }
+.icon-ls-shopping-cart      { background-position: -360px -120px; }
+.icon-ls-folder-close       { background-position: -384px -120px; }
+.icon-ls-folder-open        { background-position: -408px -120px; }
+.icon-ls-resize-vertical    { background-position: -432px -119px; }
+.icon-ls-resize-horizontal  { background-position: -456px -118px; }
+
+.icon-ls-contact				{ width: 16px; height: 16px; background: url(../images/icons-contact.png) no-repeat; } 
+.icon-ls-contact-default		{ background-position: 0 0; } 
+.icon-ls-contact-mail			{ background-position: -20px 0; } 
+.icon-ls-contact-icq			{ background-position: -40px 0; } 
+.icon-ls-contact-jabber		{ background-position: -60px 0; } 
+.icon-ls-contact-phone			{ background-position: -80px 0; } 
+.icon-ls-contact-skype			{ background-position: -100px 0; } 
+.icon-ls-contact-vkontakte		{ background-position: -120px 0; } 
+.icon-ls-contact-twitter		{ background-position: -140px 0; } 
+.icon-ls-contact-facebook		{ background-position: -160px 0; } 
+.icon-ls-contact-odnoklassniki	{ background-position: -180px 0; } 
+.icon-ls-contact-www			{ background-position: -200px 0; } 
+
+.icon-ls-validation-success 			{ width: 14px; height: 14px; background: url(../images/validation-success.png) no-repeat; }
