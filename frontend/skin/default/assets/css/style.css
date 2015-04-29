@@ -245,3 +245,34 @@ nav.main nav a {
 .tab-pane.active {
 	display: block;
 }
+#wrapper.admin, p {
+	font-size: 14px!important;
+}
+.ls-modal {
+	max-width: 1000px;
+}
+.js-tab-show-gallery:nth-child(2) {
+	display: none;
+}
+.ls-modal .media {
+	padding: 0 10px 20px;
+	box-sizing: content-box;
+}
+.uploader-info-base {
+	box-sizing: content-box;
+}
+.ls-block-header, .ls-modal-header {
+	height: auto!important;
+}
+.uploader-file-list.loading {
+	display: none;
+}
+.media-pane-footer {
+	padding-top: 20px;
+}
+.n-box p {
+	padding: 0; margin: 0;
+}
+#page_file_path {
+	font-weight: 100!important;
+}

@@ -68,7 +68,7 @@
 	{hook run='html_head_end'}
 </head>
 <body class="{$sBodyClasses}">
-	<div id="wrapper">
+	<div id="wrapper" class="admin">
 		{hook run='body_begin'}
 		<div class="container">
 			<div class="col-md-9">
@@ -120,5 +120,6 @@
 		<div class="container"><a href="http://no-be.ru" class="purple">No-Be</a> - <a href="http://no-be.ru" class="purple">сайты под ключ за 5 шагов</a>
 			<a class="pull-right" href="http://livestreet.ru">LiveStreet {$LS_VERSION}</a></div>
 	</footer>
+{$sLayoutAfter}
 </body>
 </html>

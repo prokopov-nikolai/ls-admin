@@ -51,11 +51,11 @@ class PluginAdmin_ActionPlugin extends ActionPlugin
 		$this->Viewer_AppendStyle(Plugin::GetTemplateWebPath(__CLASS__) . 'assets/css/icons-ls.css');
 		$this->Viewer_AppendStyle(Plugin::GetTemplateWebPath(__CLASS__) . 'assets/css/style.css');
 		$this->Viewer_AppendStyle(Plugin::GetTemplateWebPath(__CLASS__) . 'assets/css/pagination.css');
-		$this->Viewer_AppendStyle(Plugin::GetTemplateWebPath(__CLASS__) . 'assets/redactor/redactor.css');
+//		$this->Viewer_AppendStyle(Plugin::GetTemplateWebPath(__CLASS__) . 'assets/redactor/redactor.css');
 		$this->Viewer_AppendStyle(Plugin::GetTemplateWebPath(__CLASS__) . 'assets/css/forms.css');
 		$this->Viewer_AppendStyle(Plugin::GetTemplateWebPath(__CLASS__) . 'assets/css/field.css');
 		$this->Viewer_AppendStyle(Plugin::GetTemplateWebPath(__CLASS__) . 'assets/css/button.css');
-		$this->Viewer_AppendStyle(Config::Get('path.framework.frontend.web').'/css/alerts.css');
+//		$this->Viewer_AppendStyle(Config::Get('path.framework.frontend.web').'/css/alerts.css');
 
 		/**
 		 * Скрипты админки

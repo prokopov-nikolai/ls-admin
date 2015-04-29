@@ -9,12 +9,12 @@ $config['$root$']['router']['page'][$config['url'].'_user'] = 'PluginAdmin_Actio
 $config['admin_menu'] = array();
 
 if (LS::Adm()) {
-	$config['admin_menu'][] = array(
-		'sort' => 90,
-		'url' => '/'.$config['url'].'/user/',
-		'lang_key' => 'plugin.admin.menu.user',
-		'menu_key' => 'user',
-	);
+//	$config['admin_menu'][] = array(
+//		'sort' => 90,
+//		'url' => '/'.$config['url'].'/user/',
+//		'lang_key' => 'plugin.admin.menu.user',
+//		'menu_key' => 'user',
+//	);
 	$config['admin_menu'][] = array(
 		'sort' => 100,
 		'url' => '/'.$config['url'].'/plugins/',

@@ -19,5 +19,6 @@ class PluginAdmin extends Plugin
 	 */
 	public function Init()
 	{
+		$this->Viewer_AppendScript(Config::Get('path.root.web').'/application/frontend/components/media/js/media.js');
 	}
 }
