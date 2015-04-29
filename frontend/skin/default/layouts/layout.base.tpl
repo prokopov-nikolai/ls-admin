@@ -96,7 +96,7 @@
 			<div class="col-md-3">
 				<aside>
 					{if $oUserCurrent}{$oUserCurrent->getDisplayName()}{/if}
-					<a href="{router page='login'}exit/?security_ls_key={$LIVESTREET_SECURITY_KEY}">Выйти</a>
+					<a href="{router page='auth'}logout/?security_ls_key={$LIVESTREET_SECURITY_KEY}">Выйти</a>
 					&nbsp;<br>&nbsp;<br>
 					<a href="/admin/cache_delete/" id="cache-del">Сбросить кеш</a>
 					<nav class="main">
